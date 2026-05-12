@@ -12,7 +12,11 @@ Dependencias: PHP Intelephense v1.18.0
 Comandos necesarios para ejecutar ejemplos: MAIN?
 
 Flyweight
-El codigo es una abstraccion del problema de falta de memoria RAM debido a un uso excesivo de clases completas con componentes gráficos, se realiza una separación a la clase en su estado intrínseco(el que no cambia y se comparte) y su estado extrínseco(el que si cambia y es único), con esto la parte compartida (ArbolFlyweight), que en este caso sera la parte gráfica y que pesa mas en memoria, solo se crea una vez y las clase del contexto y cambiante (ArbolContexto) unicamente tiene el apartado de posicion y una referencia al flyweight, con ello se ahorra la instanciación de 2000 clases completas pesadas, y con ello logramos tener la parte pesada una sola vez en memoria y las posiciones en otras clases ligeras.
+El codigo es una abstraccion del problema de falta de memoria RAM debido a un uso excesivo de clases completas con componentes gráficos, se realiza una 
+separación a la clase en su estado intrínseco(el que no cambia y se comparte) y su estado extrínseco(el que si cambia y es único), con esto la parte 
+compartida (ArbolFlyweight), que en este caso sera la parte gráfica y que pesa mas en memoria, solo se crea una vez y las clase del contexto y cambiante 
+(ArbolContexto) unicamente tiene el apartado de posicion y una referencia al flyweight, con ello se ahorra la instanciación de 2000 clases completas 
+pesadas, y con ello logramos tener la parte pesada una sola vez en memoria y las posiciones en otras clases ligeras.
 
 Para ejecutar a nivel localHost: 
 1.- Descargar XAMPP, este funcionara como servidor local, al instalarlo configurara solo lo necesario(el servidor Apache principalmente).
